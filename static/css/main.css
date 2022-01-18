@@ -1,0 +1,356 @@
+@charset "UTF-8";
+/* Arbetsmetodik och Agila projektmetoder - Ytterhogdal
+Author: Marta Anna Todorovic */
+/* Arbetsmetodik och Agila projektmetoder - Ytterhogdal
+Author: Mats Hemå */
+footer {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  /* Arbetsmetodik och Agila projektmetoder - Ytterhogdal
+    Author: Marta Anna Todorovic */
+}
+
+footer h2 {
+  font-size: large;
+}
+
+footer .footer-content {
+  display: -ms-grid;
+  display: grid;
+  gap: 80px;
+  -ms-grid-columns: 0.7fr 0.7fr 0.7fr 1.5fr;
+      grid-template-columns: 0.7fr 0.7fr 0.7fr 1.5fr;
+  margin-left: 80px;
+}
+
+footer .footer-information {
+  width: 180px;
+}
+
+footer .footer-contact {
+  width: 140px;
+}
+
+footer .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+  float: left;
+  padding: 0;
+}
+
+footer .icon a {
+  color: rgba(211, 211, 211, 0.801);
+  text-decoration: none;
+  font-size: 2.2rem;
+  margin-right: 1rem;
+}
+
+footer .icon i {
+  opacity: 0.6;
+}
+
+footer .icon i:hover {
+  color: #d4af37;
+  opacity: 1;
+}
+
+header {
+  background-color: #BB0000;
+}
+
+header .main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0 10vw 0 15vw;
+  height: 100px;
+  /* Arbetsmetodik och Agila projektmetoder - Ytterhogdal
+    Author: Marta Anna Todorovic */
+}
+
+header .main-menu a:hover {
+  color: #d4af37;
+  -webkit-box-shadow: 0.7rem 0.5rem 0.5rem #000;
+          box-shadow: 0.7rem 0.5rem 0.5rem #000;
+}
+
+header .main-menu li {
+  list-style-type: none;
+}
+
+.menu-btn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  background-color: #BB0000;
+  padding: 10px 30px;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+#search {
+  border-radius: 50%;
+  padding: 10px 10px 10px 14px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+  /* Arbetsmetodik och Agila projektmetoder - Ytterhogdal
+    Author: Marta Anna Todorovic */
+}
+
+#search:hover {
+  -webkit-box-shadow: 0.7rem 0.5rem 0.5rem #000;
+          box-shadow: 0.7rem 0.5rem 0.5rem #000;
+}
+
+/* Arbetsmetodik och Agila projektmetoder - Ytterhogdal
+Author: Mats Hemå */
+img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  margin: 10px 20px 0 10px;
+  width: 90px;
+}
+
+/* Arbetsmetodik och Agila projektmetoder - Ytterhogdal
+Author: Simon Ljungström and Mats Hemå */
+.cards {
+  background-color: #BB0000;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px 0 80px 0;
+}
+
+.cards .card-catagories {
+  margin: auto;
+  width: 80%;
+}
+
+.cards h1 {
+  padding: 10px 0 10px 30px;
+}
+
+.cards img {
+  -webkit-box-shadow: 0px 0px 5px 15px #000;
+          box-shadow: 0px 0px 5px 15px #000;
+  height: 60vh;
+  margin: 0 2.5% 2% 2.5%;
+  width: 28%;
+}
+
+.cards li {
+  list-style: none;
+}
+
+.cards .popular {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cards .current {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cards .upcoming {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* Arbetsmetodik och Agila projektmetoder - Ytterhogdal
+Author: Mats Hemå &  Marta Anna Todorovic */
+.about-us-nav {
+  background-color: #000;
+}
+
+.about-us-nav .about-us-menu {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  margin: auto;
+  width: 60%;
+}
+
+.about-us-nav .about-us-menu li {
+  list-style-type: none;
+}
+
+.about-us-nav .about-us-menu li .menu-text {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.about-us-nav .about-us-menu li .menu-text:hover {
+  color: #d4af37;
+}
+
+.about-us-nav .about-us-menu li .menu-text:focus {
+  color: #d4af37;
+}
+
+.about-us-nav .about-us-menu li .menu-active {
+  color: #d4af37;
+}
+
+.about-us-space {
+  background-color: #BB0000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  padding: 40px 0px 40px 0px;
+}
+
+.about-us-space .about-us-history {
+  margin: auto;
+  width: 70%;
+}
+
+.about-us-space .about-us-history img {
+  -webkit-box-shadow: 0px 0px 15px 1px black;
+          box-shadow: 0px 0px 15px 1px black;
+  float: none;
+  margin: 0;
+  width: 600px;
+}
+
+.about-us-space .about-us-accessibility {
+  margin: auto;
+  width: 70%;
+}
+
+.about-us-space .about-us-policy {
+  margin: auto;
+  width: 70%;
+}
+
+.about-us-space .about-us-faq {
+  margin: auto;
+  width: 70%;
+}
+
+.about-us-space .about-us-hide {
+  display: none;
+}
+
+.hero-image {
+  background-image: url("../img/hero.png");
+  height: 35vw;
+  background-size: cover;
+}
+
+.important-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
+  height: 35px;
+  font-size: 1.2rem;
+}
+
+.important-info-text {
+  color: #fff;
+  -webkit-animation: blink 2s ease-out;
+          animation: blink 2s ease-out;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  margin: 0;
+}
+/*# sourceMappingURL=main.css.map */
