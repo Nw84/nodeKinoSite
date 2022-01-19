@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:compile": "node-sass --include-path sass static/cssAndScss/main.scss static/cssAndScss/main.css"
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +16,8 @@
     "express": "^4.17.2",
     "express-ejs-layouts": "^2.5.1",
     "node-fetch": "^3.1.1"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.1"
   }
 }
