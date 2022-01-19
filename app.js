@@ -41,7 +41,7 @@ app.get("/movies/:movieId", async (req, res) => {
     }
   });
 
-app.get("/aboutus", (req, res) => {
+app.get(["/aboutus", "/aboutus/history"], (req, res) => {
     res.render("aboutus-history", {layout: "./layouts/aboutus-layout"} )
 });
 
