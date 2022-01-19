@@ -17,7 +17,7 @@ const port = 5080;
 app.set("view engine", "ejs");
 app.set("views", "./static/views")
 app.use(expressLayouts)
-app.set("layout", "./layouts/main-layout", "./layouts/aboutus-layout")
+app.set("layout", "./layouts/main-layout")
 
 app.use(express.static(__dirname + "/static")); 
 
@@ -29,13 +29,13 @@ app.get("/", async (req, res) => {
 
 app.get("/movies", async (req, res) => {
     const movies = await loadMovies();
-    res.render("moviepage", { movies }); 
+    res.render("moviepage", { movies, layout: "./layouts/movie-layout"}); 
 })
 
 app.get("/movies/:movieId", async (req, res) => {
     const movie = await loadMovie(req.params.movieId);
     if (movie) {
-      res.render("movie", { movie });
+      res.render("movie", { movie, layout: "./layouts/movie-layout"});
     } else {
       res.status(404).render("404page");
     }
