@@ -9,61 +9,10 @@
 </nav>
 
 <div class="about-us-space">
-    <div class="about-us-history about-us-item">
-        <img src="../img/oldcinema.jpg" alt="Bild på vår gamla biograf">
-        <h1>Historia</h1>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
-            sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
-            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
-            dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora 
-            incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis 
-            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? 
-            Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
-            vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-    </div>
-
-    <div class="about-us-policy about-us-item about-us-hide">
-        <h1>Personuppgifter</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at urna a lacus tincidunt egestas eu elementum dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        In eget ante ipsum. Curabitur laoreet nibh ipsum, fermentum euismod elit tristique non. Maecenas nec pulvinar augue, vitae vulputate nisl.
-        Nam augue ex, convallis at nulla in, tincidunt varius arcu. Phasellus eros justo, interdum ac sem ullamcorper, posuere porta sapien.
-        Donec faucibus dolor id ligula commodo feugiat.</p>
-        <h2>Vilka delar vi dina uppgifter med?</h2>
-        <p>Sed leo lectus, facilisis vel cursus quis, suscipit ac metus. Proin vulputate mollis urna vestibulum semper. Phasellus mollis libero in mollis tempor.
-        Aliquam ornare urna iaculis dui imperdiet, a posuere elit volutpat. Vestibulum lacinia enim vel urna facilisis eleifend.
-        Duis ullamcorper fringilla sem sit amet pellentesque. Sed vehicula eros ut odio aliquet, id vehicula diam aliquet.
-        Nulla scelerisque lectus ut mollis convallis.</p>
-        <h2>Cookies</h2>
-        <p>Praesent cursus nisi id urna viverra eleifend. Fusce lorem nibh, condimentum quis facilisis ac, auctor ac mi. Nunc at euismod est.
-        Aliquam eros justo, vehicula aliquam lorem at, auctor hendrerit velit.
-        Aliquam quis gravida augue. Donec at ante nec sem luctus elementum. Cras nec mauris ultrices nunc tristique semper id vitae felis.</p>
-    </div>
-
-    <div class="about-us-accessibility about-us-item about-us-hide">
-        <h1>Tillgänglighet</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste perferendis harum eligendi eaque, nemo, maiores est voluptatibus quas itaque ipsa amet illum dolore tempore. Eos iusto, esse rem nesciunt atque dolorum sit recusandae repellat culpa facere a similique eligendi, sint soluta fuga vitae ducimus! Et libero culpa fuga repellat! Enim.</p>
-        <h2>Film med syntolkning och uppläst svensk text</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste perferendis harum eligendi eaque, nemo, maiores est voluptatibus quas itaque ipsa amet illum dolore tempore. Eos iusto, esse rem nesciunt atque dolorum sit recusandae repellat culpa facere a similique eligendi, sint soluta fuga vitae ducimus! Et libero culpa fuga repellat! Enim.</p>
-    </div>
-
-    <div class="about-us-faq about-us-item about-us-hide">
-        <h2>Giltighetstid på presentkort och biljetter</h2>
-        <p>Morbi vestibulum libero vel tellus rhoncus, consequat scelerisque nunc aliquam. Cras id felis egestas massa fermentum sagittis eu ut eros.
-        Morbi porttitor, nisl eget finibus dignissim, dolor nisi semper dui, vel interdum eros augue et arcu.
-        Aliquam tempus scelerisque quam, sed aliquet neque ullamcorper vel.</p>
-        <h2>Biljetter & återköp</h2>
-        <p>Praesent convallis risus erat. Aenean condimentum tincidunt augue a lacinia. Phasellus sapien tellus, tincidunt non lectus ut, condimentum semper elit.
-            Pellentesque aliquet imperdiet ex, quis egestas massa dignissim finibus.</p>
-        <h2>GDPR</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dictum felis sit amet diam gravida iaculis.
-        Integer dapibus diam sit amet velit aliquet, in tincidunt mi elementum.</p>
-        <h2>Medlem</h2>
-        <p>Mauris justo lorem, mattis in libero ac, fermentum blandit ante. Sed maximus lorem vel augue vestibulum, vel pellentesque sapien placerat.
-        Etiam maximus, magna non imperdiet viverra, est justo pretium urna, id porta nibh urna a eros.</p>
-        <h2>Övriga frågor</h2>
-        <p>Nulla est orci, pharetra at condimentum eu, fermentum sed enim. Sed euismod congue commodo.
-        Vestibulum efficitur eget dolor nec suscipit. Nunc ut eros sed erat consectetur placerat.</p>
-    </div>
+    <%- include("./partials/aboutus/aboutus-accessibility.ejs") %>
+    <%- include("./partials/aboutus/aboutus-faq.ejs") %>
+    <%- include("./partials/aboutus/aboutus-history.ejs") %>
+    <%- include("./partials/aboutus/aboutus-policy.ejs") %>
 </div>
 
 <script type="module" src="/js/pages/aboutus.js"></script>
