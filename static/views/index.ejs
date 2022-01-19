@@ -1,37 +1,26 @@
-<!DOCTYPE html>
-<html lang="sv">
-    <%- include("./partials/head.ejs") %>
-    <body>  
-        <%- include("./partials/nav.ejs") %>
-        
 
-        <section class="important-info"> 
-            <p class="important-info-text">Följande restriktioner för covid-19 gäller för denna biograf...</p> 
-        </section>
-
-        <section class="hero">
-            <div class="hero-image" alt="Red theater curtain"></div>
-        </section>    
-
-        <div class="cards">
-            <div class="card-catagories">
-                <div class="popular">
-                    <h1>Populära filmer</h1>
-                    <div class="popular-movieList"></div>
-                </div>
-                <div class="current">
-                    <h1>Aktuella filmer</h1>
-                    <div class="current-movieList"></div>
-                </div>
-                <div class="upcoming">
-                    <h1>Kommande filmer</h1>
-                    <div class="upcoming-movieList"></div>
-                </div>
-            </div>
+<section class="important-info"> 
+    <p class="important-info-text">Följande restriktioner för covid-19 gäller för denna biograf...</p> 
+</section>
+<section class="hero">
+    <div class="hero-image" alt="Red theater curtain"></div>
+</section>    
+<div class="cards">
+    <div class="card-catagories">
+        <div class="popular">
+            <h1>Populära filmer</h1>
+            <div class="popular-movieList"></div>
         </div>
-        <%- include("./partials/footer.ejs") %>
+        <div class="current">
+            <h1>Aktuella filmer</h1>
+            <div class="current-movieList"></div>
+        </div>
+        <div class="upcoming">
+            <h1>Kommande filmer</h1>
+            <div class="upcoming-movieList"></div>
+        </div>
+    </div>
+</div>
 
-        <script type="module" src="/js/pages/index.js"></script>
-        <script src="https://kit.fontawesome.com/955d716fd8.js" crossorigin="anonymous"></script>
-    </body>
-</html>
+<script type="module" src="/js/pages/index.js"></script>
+<script src="https://kit.fontawesome.com/955d716fd8.js" crossorigin="anonymous"></script>

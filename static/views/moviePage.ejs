@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-<html lang="sv">
-    <%- include("./partials/head.ejs") %>
-    <body>  
-        <%- include("./partials/nav.ejs") %>
-            <h3>Please Select a Movie</h3>
-            <ul>
-                <% movies.forEach(function(movie) { %>
-                    <li>
-                        <a href="/movies/<%= movie.id%>"</a>
-                    <%= movie.attributes.title %>
-                    </li>
-                    <% }); %> 
-                    
-            </ul>
-        <%- include("./partials/footer.ejs") %>
-        <script src="https://kit.fontawesome.com/955d716fd8.js" crossorigin="anonymous"></script>
-    </body>
-</html>
+
+<h3>Please Select a Movie</h3>
+<ul>
+    <% movies.forEach(function(movie) { %>
+        <li>
+            <a href="/movies/<%= movie.id%>"</a>
+            <%= movie.attributes.title %>
+        </li>
+    <% }); %>      
+</ul>
+<script src="https://kit.fontawesome.com/955d716fd8.js" crossorigin="anonymous"></script>
+

@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="sv">
-    <%- include("./partials/head.ejs") %>
-    <body>  
-        <%- include("./partials/nav.ejs") %>
-        
-        <a href="/">Back to home page</a>
-        <h1><%= movie.attributes.title %></h1>
-        <img src="<%= movie.attributes.image.url %>">
-        
-        <%- include("./partials/footer.ejs") %>
-        <script src="https://kit.fontawesome.com/955d716fd8.js" crossorigin="anonymous"></script>
-    </body>
-</html>
+<div>
+    <a href="/movies">Back to movie selection</a>
+    <h1><%= movie.attributes.title %></h1>
+    <p><%= movie.attributes.intro %></p>
+    <img src="<%= movie.attributes.image.url %>">
+</div>
+
+<script src="https://kit.fontawesome.com/955d716fd8.js" crossorigin="anonymous"></script>
