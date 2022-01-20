@@ -195,11 +195,14 @@ Author: Mats Hemå &  Marta Anna Todorovic */
     opacity: 1; } }
 
 .movies {
-  background-color: #BB0000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: inherit;
-  padding: 40px 0px 40px 0px; }
+  padding: 40px 0px 40px 0px;
+  text-align: center; }
+  .movies ul {
+    list-style-type: none; }
 
 body {
   margin: 0; }
