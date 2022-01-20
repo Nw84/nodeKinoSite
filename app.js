@@ -1,5 +1,6 @@
 import express from "express";
 import expressLayouts from "express-ejs-layouts";
+import { marked } from "marked";
 
 import { loadMovie, loadMovies } from "./static/js/loadApiData.js";
 
@@ -14,6 +15,8 @@ const app = express();
 
 const port = 5080; 
 
+let markdown = (md) => marked(md); 
+  
 app.set("view engine", "ejs");
 app.set("views", "./static/views")
 app.use(expressLayouts)
@@ -35,7 +38,7 @@ app.get("/movies", async (req, res) => {
 app.get("/movies/:movieId", async (req, res) => {
     const movie = await loadMovie(req.params.movieId);
     if (movie) {
-      res.render("movie", { movie, layout: "./layouts/movie-layout", page_name: "movies"});
+      res.render("movie", { movie, layout: "./layouts/movie-layout", page_name: "movies", markdown: markdown});
     } else {
       res.status(404).render("404page");
     }
