@@ -1,8 +1,9 @@
 <nav class="about-us-nav">
     <ul class="about-us-menu">
-        <li><a class="menu-text menu-history menu-active" href="/aboutus/history">Historia</a></li>
-        <li><a class="menu-text menu-policy" href="/aboutus/policy">Policy</a></li>
-        <li><a class="menu-text menu-accessibility" href="/aboutus/accessibility">Tillgänglighet</a></li>
-        <li><a class="menu-text menu-faq" href="/aboutus/faq">FAQ</a></li>
+        <li><a class="<%= underpage_name == "history" ? "menu-text menu-history menu-active" : "menu-text menu-history" %>" href="/aboutus/history">Historia</a></li>
+        <li><a class="<%= underpage_name == "policy" ? "menu-text menu-policy menu-active" : "menu-text menu-policy" %>" href="/aboutus/policy">Policy</a></li>
+        <li><a class="<%= underpage_name == "accessibility" ? "menu-text menu-accessibility menu-active" : "menu-text menu-accessibility" %>" href="/aboutus/accessibility">Tillgänglighet</a></li>
+        <li><a class="<%= underpage_name == "faq" ? "menu-text menu-faq menu-active" : "menu-text menu-faq" %>" href="/aboutus/faq">FAQ</a></li>
     </ul>
 </nav>
+

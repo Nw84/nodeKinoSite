@@ -2,10 +2,10 @@
     <a href="/"><img src="../../img/gm.png" alt="Logo of Ytterhogdals bio, A black goat with an black old-fashioned camera on red background"></a>
     <nav class="main-nav">
         <ul class="main-menu">
-            <li><a class="menu-btn" href="/movies">Filmer</a></li>
+            <li><a class="<%= page_name == "movies" ? "menu-btn menu-btn-active" : "menu-btn" %>" href="/movies">Filmer</a></li>
             <li><a class="menu-btn" href="#">Barnbio</a></li>
             <li><a class="menu-btn" href="#">Biljetter</a></li>
-            <li><a class="menu-btn" href="/aboutus">Om oss</a></li>
+            <li><a class="<%= page_name == "aboutus" ? "menu-btn menu-btn-active" : "menu-btn" %>" href="/aboutus">Om oss</a></li>
             <li><a class="menu-btn" href="#">kontakt</a></li>
             <span class="menu-btn" id="search"> 🔍 </span>
         </ul>

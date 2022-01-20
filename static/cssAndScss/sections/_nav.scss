@@ -20,7 +20,8 @@ header {
         }
 
         li {
-            list-style-type: none;            
+            list-style-type: none; 
+            
         }
     }
 }
@@ -36,6 +37,11 @@ header {
     border: 2px solid $secondary-color;
     border-radius: 6px;
     box-shadow: 0px 0px 10px rgba($third-color, 0.7);
+}
+
+.menu-btn-active {
+    color: $fourth-color;
+    border: 2px solid $fourth-color;
 }
 
 #search {
