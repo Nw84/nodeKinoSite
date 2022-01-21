@@ -204,9 +204,47 @@ Author: Mats Hemå &  Marta Anna Todorovic */
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: inherit;
   padding: 40px 0px 40px 0px;
-  text-align: center; }
+  text-align: center;
+  align-items: center; }
+  .movies .movies-textBox {
+    margin-bottom: 2rem; }
+  .movies .movie-list {
+    margin-top: 0.5rem;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000; }
   .movies ul {
     list-style-type: none; }
+  .movies .backMovie-btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    background-color: #BB0000;
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); }
+    .movies .backMovie-btn:hover {
+      color: #d4af37; }
+  .movies .movie-inner {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem; }
+    .movies .movie-inner h1 {
+      padding: 10px 0 10px 30px; }
+    .movies .movie-inner .movie-image {
+      box-shadow: 0px 0px 5px 15px #000;
+      height: 40vh;
+      margin: 0 2.5% 2% 2.5%;
+      display: block;
+      margin-top: 3rem;
+      margin-bottom: 8rem;
+      margin-left: auto;
+      margin-right: auto;
+      width: 25%; }
 
 body {
   margin: 0; }

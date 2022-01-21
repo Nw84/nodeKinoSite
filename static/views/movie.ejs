@@ -1,8 +1,13 @@
 <div class="movies">
-    <a class="backMovie" href="/movies">Back to movie selection</a>
-    <h1><%= movie.attributes.title %></h1>
-    <%- markdown(movie.attributes.intro) %>
-    <img src="<%= movie.attributes.image.url %>"></img>
+    <a class="backMovie-btn" href="/movies">Back to movie selection</a>
+    <div class="movie-inner">
+        <h1><%= movie.attributes.title %></h1>
+        <%- markdown(movie.attributes.intro) %>
+
+        <% if(movie.attributes.image.url.length > 0) { %>
+        <img class="movie-image" src="<%= movie.attributes.image.url %>"></img>
+        <% } %>
+    </div> 
 </div>
 
 

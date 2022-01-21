@@ -36,7 +36,7 @@ app.get("/movies/:movieId", async (req, res) => {
     if (movie) {
       res.render("movie", { movie, layout: "./layouts/movie-layout", page_name: "movies", markdown});
     } else {
-      res.status(404).render("404page", { page_name: "error"});
+      res.status(404).render("404page", { layout: "./layouts/movie-layout", page_name: "error"});
     }
   });
 
