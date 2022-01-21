@@ -68,7 +68,7 @@ header {
 
 .menu-btn-active {
   color: #d4af37;
-  border: 2px solid #d4af37; }
+  border-color: #d4af37; }
 
 #search {
   border-radius: 50%;

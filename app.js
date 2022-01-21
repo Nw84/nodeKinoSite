@@ -13,8 +13,6 @@ const __dirname = dirname(__filename);
 
 const app = express();
 
-const port = 5080; 
-
 let markdown = (md) => marked(md); 
   
 app.set("view engine", "ejs");
@@ -23,8 +21,6 @@ app.use(expressLayouts)
 app.set("layout", "./layouts/main-layout")
 
 app.use(express.static(__dirname + "/static")); 
-
-app.listen(port);
 
 app.get("/", async (req, res) => {
     res.render("index", { page_name: "start"}); 
@@ -38,9 +34,9 @@ app.get("/movies", async (req, res) => {
 app.get("/movies/:movieId", async (req, res) => {
     const movie = await loadMovie(req.params.movieId);
     if (movie) {
-      res.render("movie", { movie, layout: "./layouts/movie-layout", page_name: "movies", markdown: markdown});
+      res.render("movie", { movie, layout: "./layouts/movie-layout", page_name: "movies", markdown});
     } else {
-      res.status(404).render("404page");
+      res.status(404).render("404page", { page_name: "error"});
     }
   });
 
@@ -63,3 +59,5 @@ app.get("/aboutus/policy", (req, res) => {
 app.use((req, res) => {
     res.status(404).render("404page", { page_name: "error" });
 });
+
+export default app; 
