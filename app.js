@@ -57,7 +57,7 @@ app.get("/aboutus/policy", (req, res) => {
 });
 
 app.use((req, res) => {
-    res.status(404).render("404page", { page_name: "error" });
+    res.status(404).render("404page", { layout: "./layouts/movie-layout", page_name: "error" });
 });
 
 export default app; 

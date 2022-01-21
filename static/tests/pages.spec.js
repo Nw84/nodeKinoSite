@@ -1,5 +1,7 @@
 import request from "supertest"; 
 
+import { loadMovies } from "../js/loadApiData.js";
+
 import app from "../../app.js"; 
 
 test("movies page shows the correct title on the movies", async () => {
@@ -14,6 +16,19 @@ test("movies page shows the correct title on the movies", async () => {
     expect(response.text.includes("12 Angry Men")).toBeTruthy(); 
     expect(response.text.includes("The Godfather: Part II")).toBeTruthy(); 
     expect(response.text.includes("Threat Level Midnight: The Movie")).toBeTruthy(); 
+}); 
+
+test("movies page shows the same title for the movies as the data form the api", async () => {
+    const movies = await loadMovies();
+    const titles = movies.map(t => t.attributes.title); 
+
+    const response = await request(app)
+    .get("/movies")
+    .expect(200); 
+
+    for (let i = 0; i < titles.length; i++){
+        expect(response.text.includes(titles[i])).toBeTruthy(); 
+    }
 }); 
 
 test("The Movie page for The Shawshank Redemption shows the correct title", async () => {
