@@ -4,20 +4,23 @@
         <p>Because of popular demand we are currently showing some of the best movies ever made and the list will be updated continuously throughout the year</p>
         <p>So tell your friends and seize the opportunity! You could watch e.g. The Shawshank Redemption like it was intended, on the big screen!.</p>
     </div>
-    <div class="paper">
-        <div class="paper-lines"></div>
-        <div class="paper-hole paper-hole-1"></div>
-        <div class="paper-hole paper-hole-2"></div>
-         <div class="paper-hole paper-hole-3"></div>
-         <ul class="paper-text">
-            <% movies.forEach(function(movie) { %>
-                <li>
-                    <a href="/movies/<%= movie.id%>"</a>
-                    <%= movie.attributes.title%>
-                </li>
-            <% }); %>      
-        </ul>
-    </div>
+    <div class="paper-container">
+        <div class="paper">
+            <div class="paper-lines"></div>
+            <div class="paper-hole paper-hole-1"></div>
+            <div class="paper-hole paper-hole-2"></div>
+             <div class="paper-hole paper-hole-3"></div>
+             <ul class="paper-text">
+                <% movies.forEach(function(movie) { %>
+                    <li>
+                        <a href="/movies/<%= movie.id%>"</a>
+                        <%= movie.attributes.title%>
+                    </li>
+                <% }); %>      
+            </ul>
+        </div>
+    </p>
+    
 </div>
 
 

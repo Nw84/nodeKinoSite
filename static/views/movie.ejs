@@ -1,13 +1,19 @@
-<div class="movies">
+<div class="movie">
     <a class="backMovie-btn" href="/movies">Back to movie selection</a>
-    <div class="movie-inner">
-        <h1><%= movie.attributes.title %></h1>
-        <%- markdown(movie.attributes.intro) %>
-
-        <% if(movie.attributes.image.url.length > 0) { %>
-            <img class="movie-image" src="<%= movie.attributes.image.url %>"></img>
-        <% } %>
-    </div> 
+    <div class="movie-inner"> 
+        <div class="movie-textbox">
+            <div class="movie-textbox-text">
+                <h1><%= movie.attributes.title %></h1>
+                <%- markdown(movie.attributes.intro) %>
+                <p>For more information about show times and the upcomming scheduel, go to our <a href="#">calendar page</p>
+            </div>
+        </div> 
+        <div class="movie-imagebox">
+            <% if(movie.attributes.image.url.length > 0) { %>
+                <img class="movie-image" src="<%= movie.attributes.image.url %>"></img>
+            <% } %>
+        </div>  
+    </div>  
 </div>
 
 

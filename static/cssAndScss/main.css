@@ -208,83 +208,102 @@ Author: Mats Hemå &  Marta Anna Todorovic */
   align-items: center; }
   .movies .movies-textBox {
     margin-bottom: 2rem; }
-  .movies .paper::before {
-    content: "";
-    position: absolute;
-    left: 45px;
-    height: 100%;
-    width: 2px;
-    background: rgba(255, 0, 0, 0.4); }
-  .movies .paper {
-    position: absolute;
-    height: 550px;
-    width: 450px;
-    background: white;
-    margin: -275px -225px;
-    left: 50%;
-    top: 45%;
-    box-shadow: 0px 0px 5px 0px #888; }
-    .movies .paper .paper-lines {
-      margin-top: 40px;
-      height: calc(100% - 40px);
-      width: 100%;
-      background-image: repeating-linear-gradient(white 0px, white 24px, steelblue 25px); }
-    .movies .paper .paper-text {
+  .movies .paper-container {
+    position: relative;
+    margin-top: 20rem; }
+    .movies .paper-container .paper::before {
+      content: "";
       position: absolute;
-      top: 74px;
-      left: 15px;
-      bottom: 10px;
-      right: 10px;
-      line-height: 25px;
-      overflow: hidden;
-      outline: none;
-      opacity: 0.9; }
-    .movies .paper .paper-hole {
+      left: 45px;
+      height: 100%;
+      width: 2px;
+      background: rgba(255, 0, 0, 0.4); }
+    .movies .paper-container .paper {
       position: absolute;
-      left: 10px;
-      height: 25px;
-      width: 25px;
-      border-radius: 50%;
-      background-color: white;
-      box-shadow: inset 0px 0px 2px 0px gray; }
-    .movies .paper .paper-hole-1 {
-      top: 10%; }
-    .movies .paper .paper-hole-2 {
-      top: 50%; }
-    .movies .paper .paper-hole-3 {
-      bottom: 10%; }
-  .movies ul {
-    list-style-type: none; }
-  .movies .backMovie-btn {
+      height: 550px;
+      width: 450px;
+      background: white;
+      margin: -275px -225px;
+      left: 50%;
+      top: 45%;
+      box-shadow: 0px 0px 5px 0px #888; }
+      .movies .paper-container .paper .paper-lines {
+        margin-top: 40px;
+        height: calc(100% - 40px);
+        width: 100%;
+        background-image: repeating-linear-gradient(white 0px, white 24px, steelblue 25px); }
+      .movies .paper-container .paper .paper-text {
+        position: absolute;
+        top: 74px;
+        left: 5px;
+        bottom: 10px;
+        right: 10px;
+        line-height: 25px;
+        overflow: hidden;
+        outline: none;
+        opacity: 0.9; }
+      .movies .paper-container .paper .paper-hole {
+        position: absolute;
+        left: 10px;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background-color: white;
+        box-shadow: inset 0px 0px 2px 0px gray; }
+      .movies .paper-container .paper .paper-hole-1 {
+        top: 10%; }
+      .movies .paper-container .paper .paper-hole-2 {
+        top: 50%; }
+      .movies .paper-container .paper .paper-hole-3 {
+        bottom: 10%; }
+    .movies .paper-container ul {
+      list-style-type: none; }
+
+.movie {
+  background-color: #fff;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: inherit;
+  padding: 40px 0px 40px 0px;
+  text-align: center;
+  align-items: center; }
+  .movie .backMovie-btn {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-decoration: none;
     color: #000;
-    background-color: #BB0000;
-    padding: 10px 30px;
-    border: 2px solid #fff;
-    border-radius: 6px;
+    background-color: #fff;
+    padding: 5px 15px;
+    border: 1px solid #000;
+    border-radius: 3px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); }
-    .movies .backMovie-btn:hover {
+    .movie .backMovie-btn:hover {
       color: #d4af37; }
-  .movies .movie-inner {
-    margin: auto;
-    width: 80%;
+  .movie .movie-inner {
     display: flex;
-    flex-direction: column;
-    margin-top: 3rem; }
-    .movies .movie-inner h1 {
-      padding: 10px 0 10px 30px; }
-    .movies .movie-inner .movie-image {
-      box-shadow: 0px 0px 5px 15px #000;
-      height: 40vh;
-      margin: 0 2.5% 2% 2.5%;
-      display: block;
-      margin-top: 3rem;
-      margin-bottom: 8rem;
-      margin-left: auto;
-      margin-right: auto;
-      width: 25%; }
+    justify-content: center;
+    padding: 5%;
+    width: 80%; }
+    .movie .movie-inner .movie-textbox {
+      padding: 2%;
+      width: 40%; }
+      .movie .movie-inner .movie-textbox .movie-textbox-text {
+        bottom: 0; }
+        .movie .movie-inner .movie-textbox .movie-textbox-text h1 {
+          padding: 10px 0 10px 30px; }
+    .movie .movie-inner .movie-imagebox {
+      padding: 2%;
+      width: 80%; }
+      .movie .movie-inner .movie-imagebox .movie-image {
+        box-shadow: 0px 0px 5px 15px #000;
+        height: 40vh;
+        margin: 0 2.5% 2% 2.5%;
+        display: block;
+        margin-top: 3rem;
+        margin-bottom: 8rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%; }
 
 body {
   margin: 0; }
