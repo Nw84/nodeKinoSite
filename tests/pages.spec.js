@@ -1,6 +1,6 @@
 import request from "supertest"; 
 
-import { loadMovies } from "../js/loadApiData.js";
+import { loadMovies } from "../src/js/loadApiData.js";
 
 import app from "../app.js"; 
 
