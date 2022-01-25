@@ -8,7 +8,7 @@
     "start": "node .",
     "dev": "nodemon .",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "sass:compile": "node-sass --include-path sass static/cssAndScss/main.scss static/cssAndScss/main.css"
+    "sass:compile": "node-sass --include-path sass src/sass/main.scss static/css/main.css"
   },
   "author": "",
   "license": "ISC",

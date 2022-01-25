@@ -2,7 +2,7 @@ import express from "express";
 import expressLayouts from "express-ejs-layouts";
 import { marked } from "marked";
 
-import { loadMovie, loadMovies } from "./static/js/loadApiData.js";
+import { loadMovie, loadMovies } from "./src/js/loadApiData.js";
 
 import { fileURLToPath } from "url";
 import { dirname } from "path";
@@ -16,7 +16,7 @@ const app = express();
 let markdown = (md) => marked(md); 
   
 app.set("view engine", "ejs");
-app.set("views", "./static/views")
+app.set("views", "./views")
 app.use(expressLayouts)
 app.set("layout", "./layouts/main-layout")
 

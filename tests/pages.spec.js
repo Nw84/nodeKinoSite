@@ -2,7 +2,7 @@ import request from "supertest";
 
 import { loadMovies } from "../js/loadApiData.js";
 
-import app from "../../app.js"; 
+import app from "../app.js"; 
 
 test("movies page shows the correct title on the movies", async () => {
     const response = await request(app)
